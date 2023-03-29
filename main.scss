@@ -1,0 +1,80 @@
+* {
+  background-color: beige;
+}
+
+.buttons {
+  color: red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas:
+    "input input input input"
+    "input input input input"
+    "AC plusminus percent divide "
+    "seven eight nine multiply "
+    "four five six substract  "
+    "one two three plus       "
+    "zero zero dot equals     ";
+
+  .number {
+    &__ac {
+      grid-area: AC;
+    }
+    &__0 {
+      grid-area: zero;
+    }
+    &__1 {
+      grid-area: one;
+    }
+    &__2 {
+      grid-area: two;
+    }
+    &__3 {
+      grid-area: three;
+    }
+    &__4 {
+      grid-area: four;
+    }
+    &__5 {
+      grid-area: five;
+    }
+    &__6 {
+      grid-area: six;
+    }
+    &__7 {
+      grid-area: seven;
+    }
+    &__8 {
+      grid-area: eight;
+    }
+    &__9 {
+      grid-area: nine;
+    }
+    &__dot {
+      grid-area: dot;
+    }
+  }
+  .operation {
+    &__plus {
+      grid-area: plus;
+    }
+    &__minus {
+      grid-area: substract;
+    }
+    &__divide {
+      grid-area: divide;
+    }
+    &__multiply {
+      grid-area: multiply;
+    }
+    &__percent {
+      grid-area: percent;
+    }
+    &__changeSign {
+      grid-area: plusminus;
+    }
+    &__equals {
+      grid-area: equals;
+    }
+  }
+}

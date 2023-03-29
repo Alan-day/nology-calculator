@@ -1,0 +1,68 @@
+* {
+  background-color: beige;
+}
+
+.buttons {
+  color: red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: "input input input input" "input input input input" "AC plusminus percent divide " "seven eight nine multiply " "four five six substract  " "one two three plus       " "zero zero dot equals     ";
+}
+.buttons .number__ac {
+  grid-area: AC;
+}
+.buttons .number__0 {
+  grid-area: zero;
+}
+.buttons .number__1 {
+  grid-area: one;
+}
+.buttons .number__2 {
+  grid-area: two;
+}
+.buttons .number__3 {
+  grid-area: three;
+}
+.buttons .number__4 {
+  grid-area: four;
+}
+.buttons .number__5 {
+  grid-area: five;
+}
+.buttons .number__6 {
+  grid-area: six;
+}
+.buttons .number__7 {
+  grid-area: seven;
+}
+.buttons .number__8 {
+  grid-area: eight;
+}
+.buttons .number__9 {
+  grid-area: nine;
+}
+.buttons .number__dot {
+  grid-area: dot;
+}
+.buttons .operation__plus {
+  grid-area: plus;
+}
+.buttons .operation__minus {
+  grid-area: substract;
+}
+.buttons .operation__divide {
+  grid-area: divide;
+}
+.buttons .operation__multiply {
+  grid-area: multiply;
+}
+.buttons .operation__percent {
+  grid-area: percent;
+}
+.buttons .operation__changeSign {
+  grid-area: plusminus;
+}
+.buttons .operation__equals {
+  grid-area: equals;
+}/*# sourceMappingURL=main.css.map */
