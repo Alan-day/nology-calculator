@@ -2,7 +2,7 @@
   background-color: beige;
 }
 
-.buttons {
+.calculator {
   color: red;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -16,6 +16,9 @@
     "one two three plus       "
     "zero zero dot equals     ";
 
+  .numberInput {
+    grid-area: input;
+  }
   .number {
     &__ac {
       grid-area: AC;

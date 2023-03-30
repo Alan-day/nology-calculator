@@ -2,67 +2,70 @@
   background-color: beige;
 }
 
-.buttons {
+.calculator {
   color: red;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas: "input input input input" "input input input input" "AC plusminus percent divide " "seven eight nine multiply " "four five six substract  " "one two three plus       " "zero zero dot equals     ";
 }
-.buttons .number__ac {
+.calculator .numberInput {
+  grid-area: input;
+}
+.calculator .number__ac {
   grid-area: AC;
 }
-.buttons .number__0 {
+.calculator .number__0 {
   grid-area: zero;
 }
-.buttons .number__1 {
+.calculator .number__1 {
   grid-area: one;
 }
-.buttons .number__2 {
+.calculator .number__2 {
   grid-area: two;
 }
-.buttons .number__3 {
+.calculator .number__3 {
   grid-area: three;
 }
-.buttons .number__4 {
+.calculator .number__4 {
   grid-area: four;
 }
-.buttons .number__5 {
+.calculator .number__5 {
   grid-area: five;
 }
-.buttons .number__6 {
+.calculator .number__6 {
   grid-area: six;
 }
-.buttons .number__7 {
+.calculator .number__7 {
   grid-area: seven;
 }
-.buttons .number__8 {
+.calculator .number__8 {
   grid-area: eight;
 }
-.buttons .number__9 {
+.calculator .number__9 {
   grid-area: nine;
 }
-.buttons .number__dot {
+.calculator .number__dot {
   grid-area: dot;
 }
-.buttons .operation__plus {
+.calculator .operation__plus {
   grid-area: plus;
 }
-.buttons .operation__minus {
+.calculator .operation__minus {
   grid-area: substract;
 }
-.buttons .operation__divide {
+.calculator .operation__divide {
   grid-area: divide;
 }
-.buttons .operation__multiply {
+.calculator .operation__multiply {
   grid-area: multiply;
 }
-.buttons .operation__percent {
+.calculator .operation__percent {
   grid-area: percent;
 }
-.buttons .operation__changeSign {
+.calculator .operation__changeSign {
   grid-area: plusminus;
 }
-.buttons .operation__equals {
+.calculator .operation__equals {
   grid-area: equals;
 }/*# sourceMappingURL=main.css.map */
