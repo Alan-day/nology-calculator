@@ -10,6 +10,7 @@
   grid-template-areas: "input input input input" "input input input input" "AC plusminus percent divide " "seven eight nine multiply " "four five six substract  " "one two three plus       " "zero zero dot equals     ";
 }
 .calculator .numberInput {
+  background-color: azure;
   grid-area: input;
 }
 .calculator .number__ac {
