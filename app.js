@@ -14,7 +14,6 @@ const handleNumberClick = (event) => {
     firstPart = event.target.innerText;
   }
 };
-
 numbers.forEach((element) => {
   element.addEventListener("click", handleNumberClick);
 });
@@ -28,12 +27,11 @@ operations.forEach((element) => {
   element.addEventListener("click", handleOperationClick);
 });
 
-handleClearFunction();
-{
-  firstPart = "";
-  operator = "";
-  partTwo = "";
-}
+const handleClearFunction = (event) => {
+  event.target.firstPart = "";
+  event.target.operator = "";
+  event.target.partTwo = "";
+};
 
 clearedItems.forEach((element) => {
   element.addEventListener("click", handleClearFunction);
