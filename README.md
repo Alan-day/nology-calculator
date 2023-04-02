@@ -1,2 +1,3 @@
 # nology-calculator
-A simple calculator developed in vanilla JavaScript on a basic webpage 
+A simple calculator on a basic webpage 
+developed in vanilla JavaScript 
