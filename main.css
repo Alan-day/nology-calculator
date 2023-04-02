@@ -1,10 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Open+Sans:wght@500&display=swap");
 * {
-  background-color: beige;
+  background-color: #212529;
+}
+
+body {
+  margin: 20px;
+  background: linear-gradient(45deg, #0a0a0a, #717377);
 }
 
 .calculator {
-  color: red;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #717377;
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas: "input input input input" "input input input input" "AC plusminus percent divide " "seven eight nine multiply " "four five six substract  " "one two three plus       " "zero zero dot equals     ";
@@ -69,4 +78,28 @@
 }
 .calculator .operation__equals {
   grid-area: equals;
+}
+
+button {
+  box-shadow: -5px -5px 10px gray;
+  padding: 25px;
+  border-radius: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+}
+
+button:hover {
+  background-color: aliceblue;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Fira Sans", sans-serif;
+  color: #3a86ff;
+}
+
+div {
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

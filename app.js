@@ -28,13 +28,13 @@ operations.forEach((element) => {
   element.addEventListener("click", handleOperationClick);
 });
 
-/*const handleClearFunction = (event) => {
+handleClearFunction();
+{
   firstPart = "";
   operator = "";
   partTwo = "";
-};
+}
 
 clearedItems.forEach((element) => {
   element.addEventListener("click", handleClearFunction);
 });
-*/
