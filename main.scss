@@ -28,7 +28,9 @@ body {
     "zero zero dot equals     ";
 
   .numberInput {
-    background-color: azure;
+    font-weight: bold;
+    font-size: 36px;
+    color: lightblue;
     grid-area: input;
   }
   .number {
@@ -115,5 +117,8 @@ h1 {
 }
 
 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
 }

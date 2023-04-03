@@ -3,10 +3,12 @@ let userInput = document.querySelector("#numberInput");
 const numbers = document.querySelectorAll(".number");
 const operations = document.querySelectorAll(".operation");
 const equals = document.querySelector("#equals");
+const clear = document.querySelector(".clear");
 
 let firstPart = " ";
 let operator = " ";
 let secondPart = " ";
+let product = "";
 
 /*const calculate=(numbers)=> {
 const value = numbers.textContent
@@ -29,7 +31,7 @@ const handleNumberClick = (event) => {
   } else {
   }
 };
-
+// equal function
 const handleEquals = (event) => {
   if (operator == "+") {
     userInput.innerHTML = parseInt(firstPart) + parseInt(secondPart);
@@ -50,7 +52,7 @@ const handleEquals = (event) => {
     console.log(userInput.innerHTML);
   }
 };
-
+equals.addEventListener("click", handleEquals);
 /*
   
   
@@ -80,13 +82,12 @@ operations.forEach((element) => {
   element.addEventListener("click", handleOperationClick);
 });
 
-equals.addEventListener("click", handleEquals);
-
+//clear function
 const handleClearFunction = (event) => {
-  userInput.innerHTML += event.target.innerText;
-  firstPart = "";
-  operator = "";
-  partTwo = "";
+  userInput.innerHTML = null;
+  firstPart = " ";
+  operator = " ";
+  secondPart = " ";
 };
 
-equals.addEventListener("click", handleClearFunction);
+clear.addEventListener("click", handleClearFunction);
