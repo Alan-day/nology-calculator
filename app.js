@@ -4,23 +4,16 @@ const numbers = document.querySelectorAll(".number");
 const operations = document.querySelectorAll(".operation");
 const equals = document.querySelector("#equals");
 const clear = document.querySelector(".clear");
+const sign = document.querySelector(".sign");
+const dot = document.querySelector(".dot");
 
 let firstPart = " ";
 let operator = " ";
 let secondPart = " ";
 let product = " ";
 
-/*const calculate=(numbers)=> {
-const value = numbers.textContent
-calculation.push(value)
-totalCalculation =calculate.join('')
-userInput.textContent = totalCalculation
-console.log(ca);
-}
-*/
-
 const handleNumberClick = (event) => {
-  if (operator == " " ){
+  if (operator == " ") {
     userInput.innerHTML += event.target.innerText;
     firstPart += event.target.innerText;
     console.log(firstPart);
@@ -35,7 +28,7 @@ const handleNumberClick = (event) => {
 const handleEquals = (event) => {
   if (operator == "+") {
     userInput.innerHTML = parseInt(firstPart) + parseInt(secondPart);
-    product.toString() = userInput.innerHTML;
+
     console.log(userInput.innerHTML);
   } else if (operator == "-") {
     userInput.innerHTML = parseInt(firstPart) - parseInt(secondPart);
@@ -51,28 +44,15 @@ const handleEquals = (event) => {
   } else if (operator == "%") {
     userInput.innerHTML = parseInt(firstPart) * 0.01 * parseInt(secondPart);
     console.log(userInput.innerHTML);
+  } else {
   }
 };
 equals.addEventListener("click", handleEquals);
-/*
-  
-  
-let calculation = [];
-let totalCalculation;
-
-
-  
-  
-  if (operator != "") {
-    secondPart = event.target.innerText;
-  } else if (operator == "") {
-    firstPart = event.target.innerText;
-  }*/
 
 numbers.forEach((element) => {
   element.addEventListener("click", handleNumberClick);
 });
-
+//operation clicking
 const handleOperationClick = (event) => {
   userInput.innerHTML += event.target.innerText;
   operator = event.target.innerText;
@@ -92,3 +72,18 @@ const handleClearFunction = (event) => {
 };
 
 clear.addEventListener("click", handleClearFunction);
+
+/* const handleSignFunction = (event) => {
+ if(secondPart == " ") {
+    userInput.innerHTML == firstPart.concat(".")  
+  } else if (firstPart != " "){
+  userInput.innerHTML == secondPart.concat(".")  
+}};
+
+
+sign.addEventListener("click", handleSignFunction);
+dot.addEventListener("click", handleDotFunction); 
+
+
+
+*/
