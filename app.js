@@ -8,7 +8,7 @@ const clear = document.querySelector(".clear");
 let firstPart = " ";
 let operator = " ";
 let secondPart = " ";
-let product = "";
+let product = " ";
 
 /*const calculate=(numbers)=> {
 const value = numbers.textContent
@@ -20,7 +20,7 @@ console.log(ca);
 */
 
 const handleNumberClick = (event) => {
-  if (operator == " ") {
+  if (operator == " " ){
     userInput.innerHTML += event.target.innerText;
     firstPart += event.target.innerText;
     console.log(firstPart);
@@ -35,6 +35,7 @@ const handleNumberClick = (event) => {
 const handleEquals = (event) => {
   if (operator == "+") {
     userInput.innerHTML = parseInt(firstPart) + parseInt(secondPart);
+    product.toString() = userInput.innerHTML;
     console.log(userInput.innerHTML);
   } else if (operator == "-") {
     userInput.innerHTML = parseInt(firstPart) - parseInt(secondPart);
