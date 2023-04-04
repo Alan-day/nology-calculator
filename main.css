@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Open+Sans:wght@500&display=swap");
 * {
+  border: 0;
+  margin: 0;
   background-color: #212529;
 }
 
 body {
-  margin: 20px;
   background: linear-gradient(45deg, #0a0a0a, #717377);
 }
 
 .calculator {
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #717377;
   display: grid;
   gap: 10px;
@@ -19,7 +20,9 @@ body {
   grid-template-areas: "input input input input" "input input input input" "AC plusminus percent divide " "seven eight nine multiply " "four five six substract  " "one two three plus       " "zero zero dot equals     ";
 }
 .calculator .numberInput {
-  background-color: azure;
+  font-weight: bold;
+  font-size: 36px;
+  color: lightblue;
   grid-area: input;
 }
 .calculator .number__ac {
@@ -82,9 +85,9 @@ body {
 
 button {
   box-shadow: -5px -5px 10px gray;
-  padding: 25px;
+  padding: 15px;
   border-radius: 80px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   background-color: white;
 }
@@ -94,12 +97,52 @@ button:hover {
 }
 
 h1 {
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   font-family: "Fira Sans", sans-serif;
-  color: #3a86ff;
+  color: gray;
 }
 
 div {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .calculator {
+    margin: 10vh;
+  }
+  button {
+    box-shadow: -5px -5px 10px gray;
+    padding: 25px;
+    border-radius: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 0px;
+  }
+  .calculator {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin: 5vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(7, 1fr);
+  }
+  button {
+    padding-right: 0px;
+    padding-left: 0px;
+    box-shadow: -5px -5px 10px gray;
+    border-radius: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+  }
 }/*# sourceMappingURL=main.css.map */
