@@ -32,18 +32,12 @@ const handleEquals = (event) => {
     console.log(userInput.innerHTML);
   } else if (operator == "-") {
     userInput.innerHTML = parseInt(firstPart) - parseInt(secondPart);
-    console.log(userInput.innerHTML);
   } else if (operator == "÷") {
     userInput.innerHTML = parseInt(firstPart) / parseInt(secondPart);
-
-    console.log(userInput.innerHTML);
   } else if (operator == "x") {
     userInput.innerHTML = parseInt(firstPart) * parseInt(secondPart);
-
-    console.log(userInput.innerHTML);
   } else if (operator == "%") {
     userInput.innerHTML = parseInt(firstPart) * 0.01 * parseInt(secondPart);
-    console.log(userInput.innerHTML);
   } else {
   }
 };
@@ -52,6 +46,7 @@ equals.addEventListener("click", handleEquals);
 numbers.forEach((element) => {
   element.addEventListener("click", handleNumberClick);
 });
+
 //operation clicking
 const handleOperationClick = (event) => {
   userInput.innerHTML += event.target.innerText;
